@@ -1,0 +1,147 @@
+ *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+     font-family: "IBM Plex Sans", sans-serif;
+ }
+ body{
+    max-width: 1440px;
+    background-color: #f0f4f5;
+    overflow: hidden;
+    margin: auto;
+ }
+ /* design the navigation menu */
+ nav{
+   height: 15vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5%
+ }
+ /* logo */
+ nav img{
+   width: 150px;
+ }
+ nav ul{
+   display: flex;
+   align-items: center;
+   gap: 35px;
+ }
+ nav ul li{
+   list-style: none;
+   font-weight: 600;
+   margin-right: 50px;
+ }
+ a{
+   text-decoration: none;
+   color: black;
+ }
+ nav ul li a:hover{
+   text-decoration: underline;
+   color: rgb(23, 130, 46);
+   cursor: pointer;
+  }
+/* design the main section */
+main{
+   height: 85vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+ .container{
+     /* border: 2px solid red; */
+    position: absolute;
+    left: 250px;
+    bottom: 115px;
+ }
+ .container .contactInfo{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+
+ }
+  .container .contactInfo .box{
+   position: relative;
+   padding: 20px 0;
+   display: flex;
+  }
+    .container .contactInfo .box .icon{
+      min-width: 60px;
+      height: 60px;
+      background: #ddd5d5d2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 22px;
+    }
+    .container .contactInfo .box .text{
+      display: flex;
+      margin-left: 20px;
+      font-size: 16px;
+      color: #9ab582;
+      flex-direction: column;
+      font-weight: 300;
+    }
+     .container .contactInfo .box .text h3{
+      font-weight: 500;
+      color: #00bcd4;
+     }
+      .container .contactInfo .box .text p{
+         font-size: 800;
+         font-weight: 500;
+         color: rgba(139, 23, 165, 0.836);
+      }
+form{
+   width: 350px;
+   /* height: 400px; */
+   box-shadow: 0 0 10px black;
+   border-radius: 10px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   position: absolute;
+   right: 175px;
+   bottom: 50px;
+}
+form span{
+   position: absolute;
+   right: 440px;
+   top: 200px;
+  
+}
+form h1{
+   text-align: center;
+}
+form div{
+   display: flex;
+   flex-direction: column;
+}
+form div label{
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 5px;
+}
+form div input{
+   border: transparent;
+   border-radius: 10px;
+   padding: 5px 10px;
+}
+form button{
+   border: transparent;
+    border-radius: 10px;
+    background: #20BC7E;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+form button:hover{
+   border: 1px solid black;
+   color: #20BC7E;
+   background-color: white;
+   cursor: pointer;
+}

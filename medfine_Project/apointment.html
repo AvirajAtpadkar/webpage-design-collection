@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <!-- adding css file -->
+    <link rel="stylesheet" href="./styles/appointment.css">
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Register Here</h2>
+            <form id="register"  name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <label>First Name :</label>
+            <br>
+            <input type="text" name="name"
+            id="name" placeholder="Enter Your First Name">
+            <br><br>
+            <label for="">Last Name : </label>
+            <br>
+            <input type="text" name="fname" 
+            id="name" placeholder="Enter Your last Name">
+             <br><br>
+             <label for="">Your Age : </label>
+             <br>
+             <input type="number" name="age" id="name" placeholder="How old are You?">
+             <br><br>
+             <label for="Email">Email : </label>
+             <input type="email" name="email" id="name" placeholder="Enter Your Valid Email">
+             <br><br>
+             <label for="plone">Contact NO :</label>
+             <input type="phone" name="phone" id="name" placeholder="Enter Your Valid Phone ">
+             <br><br>
+             <label>Gender : </label>
+             <br>
+             &nbsp;&nbsp;&nbsp;
+             <input type="radio" name="gender" id="male">
+             &nbsp;
+             <span id="male">Male</span>
+             &nbsp;&nbsp;&nbsp; &nbsp;
+             <input type="radio" name="gender" id="female">
+             &nbsp;
+             <span id="female">Female</span>
+             <br><br>
+             <label for="">Known Language :</label>
+             <br>
+             &nbsp; &nbsp; &nbsp;
+            
+             <input type="checkbox" name="lang" id="hindi">
+             &nbsp;
+             <span id="hindi" >Hindi</span>
+             &nbsp; &nbsp; &nbsp; &nbsp;
+             <input type="checkbox" name="lang" id="eng">
+             &nbsp;
+             <span id="eng">English</span>
+             &nbsp; &nbsp; &nbsp; &nbsp;
+            
+             <br><br>
+             <input type="submit" value="Submit" name="submit" id="submit">
+
+            </form>
+
+
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+  let name = document.forms["myForm"]["name"].value;
+  let email = document.forms["myForm"]["email"].value;
+  let phone = document.forms["myForm"]["phone"].value;
+  //check if name is empty
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  //check if last name empty
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  //check if email is empty
+  if(email == ""){
+    alert("please enter your email")
+    return false;
+  }
+  if(!/\S+@\S+\.\S+/.test(email)){
+    alert("please enter a valid email address");
+    return false;
+  }
+  //check if contact no is empty
+  if(phone == ""){
+    alert("please enter your contact number");
+    return false;
+  }
+  if(phone.lenght <10){
+    alert("Mobile number must have 10 digit long");
+    return false;
+
+  }
+alert("form submitted successfully");
+return true;
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+ 
+/* design the navigation menu */
+nav{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    position: sticky;
+    top: 0%;
+  }
+  /* logo */
+  nav img{
+    width: 150px;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    position: sticky;
+  }
+  nav ul li{
+    list-style: none;
+    font-weight: 600;
+    margin-right: 50px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(23, 130, 46);
+    cursor: pointer;
+   }
+/* design the sections */
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+  }
+  .para{
+    padding: 0px 65px;
+  }
+  .sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 10px;
+   
+  
+  }
+  .thambnail img{
+    width: 250%;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 20px;
+  }
+  
+  .section{
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 85%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  }
+  .sectionLeft{
+    flex-direction: row-reverse;
+  }
+  .paras{
+    padding: 0 65px;
+  }
+  .thumbnail img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-top: 20px;
+  }
+  .sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+  }
+  .sectionTag{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline #20BC7E;
+    background-color:  #d5eadd;
+    border-radius: 10px;
+    width: 500px;
+    height: 52px;
+    
+  }
+  span{
+    margin-bottom: 20px;
+    color: #20BC7E;
+  }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- adding the css file -->
+    <link rel="stylesheet" href="./styles/contact.css">
+      <!-- adding the google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+      />
+</head>
+<body>
+    <!-- creating the navigation menu -->
+    <nav>
+        <img src="./images/logo.png" alt="logo">
+        <a href="/"></a>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- main section -->
+    <main>
+      <!-- contact source -->
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon"><i class='fas fa-map-marker-alt' style='font-size:36px'></i> </div>
+            <div class="text">
+              <h3>4671 Sugar Camp Road, <hr> <hr> <p> Phaltan,Jadhavwadi, <br>55060</p></h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fa-solid fa-phone"></i> </div>
+            <div class="text">
+              <h3>phone :</h3>
+              <p>9876543210</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i> </div>
+            <div class="text">
+              <h3>Email :</h3>
+              <p>XYZ@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- contact form -->
+        <form action="" name="name" onsubmit="return validityForm()">
+            <span><ion-icon name="close-outline"></ion-icon></span>
+            <h1>Contact Form</h1>
+            <div>
+                <label>Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div>
+                <label>phone :</label>
+                <input type="phone" name="phone" id="phone" placeholder="Enter your phone Number">
+            </div>
+            <div>
+                <label for="Massage">comment :</label>
+                <textarea  name="Massage" id="Massage" cols="10" rows="2"></textarea>
+            </div>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </main>
+    <script>
+                function validateForm() {
+          // Get the input values
+          var name = document.forms["myForm"]["name"].value;
+          var email = document.forms["myForm"]["email"].value;
+          var password = document.forms["myForm"]["phone"].value;
+          
+          var password = document.forms["myForm"]["message"].value;
+    
+    
+          // Check if the name is empty
+          if (name == "") {
+            alert("Please enter your name");
+            return false;
+          }
+    
+          // Check if the email is empty or doesn't have a valid format
+          if (email == "") {
+            alert("Please enter your email");
+            return false;
+          }
+          if (!/\S+@\S+\.\S+/.test(email)) {
+            alert("Please enter a valid email address");
+            return false;
+          }
+    
+          // Check if the password is empty or less than 8 characters
+          if (phone == "") {
+            alert("Please enter a Contact Number");
+            return false;
+          }
+          if (phone.length <10) {
+            alert("Mobile Number must have 10 digit long");
+            return false;
+          }
+
+          if (message == "") {
+            alert("Please enter your Response");
+            return false;
+          }
+    
+          // If all validations pass, the form is valid
+          alert("Form submitted successfully");
+          return true;
+        }
+
+    </script>
+</body>
+</html>
+
+<!-- 
+    <form action="" name="myname" >
+            <span><ion-icon name="close-outline"></ion-icon></span>
+            <h1>Contact Form</h1>
+            <div>
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <div>
+                <label>Massage</label>
+                <textarea placeholder="Enter your Massage"></textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ -->
